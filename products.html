@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang=<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,9 @@
     <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom js file link  -->
+    <script src="script.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -22,9 +26,9 @@
             <a href="#"><i class='bx bx-search'></i></a>
             <a href="login.html"><i class='bx bxs-user'></i></a>
             <a href="#"><i class='bx bx-cart'></i></a>
-            
+           
             <div class='bx bx-menu' id="menu-icon"></div>
-            
+           
         </div>
     </nav>
     <div class="section-body">
@@ -35,14 +39,15 @@
                 <li><a href="#Thriller">Thriller</a></li>
                 <li><a href="#Romantic">Romantic</a></li>
                 <li><a href="#Comedy">Comedy</a></li>
+                <li><a href="#Mystery">Mystery</a></li>
                 <li><a href="#Fiction">Fiction</a></li>
             </ul>
         </div>
-        <div class="gallery-main" style="margin-left: 25%;padding: 1px 16px; height: 1000px;">
-        <div>
-            <h2>Adventure</h2>
-            <div class="gallery">
-                <div class="image-holder">
+        <div class="gallery-main" style="margin-left: 25%;padding: 1px 16px; height: 1000px;"><div>
+    <!-------- adventure--------->
+            <h2 id="Adventure">Adventure</h2>
+            <div class="products-container">
+                <div class="product" data-name="p-1">
                     <a href="#">
                         <img src="./images/adv_img1.jpg" alt="img-1">
                     </a>
@@ -58,12 +63,12 @@
                     <button>Buy</button>
                     </div>
                 </div>
-                <div class="image-holder">
+                <div class="product" data-name="p-2">
                     <a href="#">
                         <img src="./images/adv_img2.jpg" alt="img-2">
                     </a>
                     <div class="desc">
-                        Price:250
+                        Price:249
                         <br>
                         <div class="rating">
                             <i class="fa-solid fa-star"></i>
@@ -75,7 +80,7 @@
                         <button>Buy</button>
                     </div>
                 </div>
-                <div class="image-holder">
+                <div class="product" data-name="p-3">
                     <a href="#">
                         <img src="./images/adv_img3.jpg" alt="img-3">
                     </a>
@@ -92,7 +97,7 @@
                         <button>Buy</button>
                     </div>
                 </div>
-                <div class="image-holder">
+                <div class="product" data-name="p-4">
                     <a href="#">
                         <img src="./images/adv_img4.jpg" alt="img-4">
                     </a>
@@ -109,7 +114,7 @@
                         <button>Buy</button>
                     </div>
                 </div>
-                <div class="image-holder">
+                <div class="product" data-name="p-5">
                     <a href="#">
                         <img src="./images/adv_img5.jpg" alt="img-5">
                     </a>
@@ -126,7 +131,7 @@
                         <button>Buy</button>
                     </div>
                 </div>
-                <div class="image-holder">
+                <div class="product" data-name="p-6">
                     <a href="#">
                         <img src="./images/adv_img6.jpg" alt="img-6">
                     </a>
@@ -143,7 +148,7 @@
                         <button>Buy</button>
                     </div>
                 </div>
-                <div class="image-holder">
+                <div class="product" data-name="p-7">
                     <a href="#">
                         <img src="./images/adv_img7.jpg" alt="img-7">
                     </a>
@@ -161,7 +166,7 @@
                     </div>
                 </div>
 
-                <div class="image-holder">
+                <div class="product" data-name="p-8">
                     <a href="#">
                         <img src="./images/adv_img8.jpg" alt="img-8">
                     </a>
@@ -184,93 +189,149 @@
      <!-- ---------Thriller ------------>
 
             <div>
-                <h2>Thriller</h2>
+                <h2 id="Thriller">Thriller</h2>
 
-                <div class="gallery">
-                    <div class="image-holder">
+                <div class="products-container">
+                    <div class="product" data-name="p-9">
                         <a href="#">
                             <img src="./images/thriller_img1.jpg" alt="img-1">
                         </a>
                         <div class="desc">
                             Price : 120
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-10">
                         <a href="#">
                             <img src="./images/thriller_img2.jpg" alt="img-2">
                         </a>
                         <div class="desc">
                             Price : 402
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-11">
                         <a href="#">
                             <img src="./images/thriller_img3.jpg" alt="img-3">
                         </a>
                         <div class="desc">
                             Price : 299
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-12">
                         <a href="#">
                             <img src="./images/thriller_img4.jpg" alt="img-4">
                         </a>
                         <div class="desc">
                             Price : 150
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-13">
                         <a href="#">
                             <img src="./images/thriller_img5.jpg" alt="img-5">
                         </a>
                         <div class="desc">
                             Price : 300
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-14">
                         <a href="#">
                             <img src="./images/thriller_img6.jpg" alt="img-6">
                         </a>
                         <div class="desc">
                             Price : 389
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-15">
                         <a href="#">
                             <img src="./images/thriller_img7.jpg" alt="img-7">
                         </a>
                         <div class="desc">
                             Price : 269
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-16">
                         <a href="#">
                             <img src="./images/thriller_img8.jpg" alt="img-8">
                         </a>
                         <div class="desc">
                             Price : 451
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
@@ -280,93 +341,150 @@
 
      <!-------------- Romantic ------------------>
                 <div>
-                    <h2>Romantic</h2>
+                    <h2 id="Romantic">Romantic</h2>
 
-                    <div class="gallery">
-                        <div class="image-holder">
+                    <div class="products-container">
+                        <div class="product" data-name="p-17">
                             <a href="#">
                                 <img src="./images/romantic_img1.jpg" alt="img-1">
                             </a>
                             <div class="desc">
                                 Price : 250
                                 <br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                                 <button>Buy</button>
                             </div>
                         </div>
 
-                        <div class="image-holder">
+                        <div class="product" data-name="p-18">
                             <a href="#">
                                 <img src="./images/romantic_img2.jpg" alt="img-1">
                             </a>
                             <div class="desc">
                                 Price : 300
                                 <br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                                 <button>Buy</button>
                             </div>
                         </div>
 
-                        <div class="image-holder">
+                        <div class="product" data-name="p-19">
                             <a href="#">
                                 <img src="./images/romantic_img3.jpg" alt="img-1">
                             </a>
                             <div class="desc">
                                 Price : 450
                                 <br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                                 <button>Buy</button>
                             </div>
                         </div>
 
-                        <div class="image-holder">
+                        <div class="product" data-name="p-20">
                             <a href="#">
                                 <img src="./images/romantic_img4.jpg" alt="img-1">
                             </a>
                             <div class="desc">
                                 Price : 299
                                 <br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                                 <button>Buy</button>
                             </div>
                         </div>
 
-                        <div class="image-holder">
+                        <div class="product" data-name="p-21">
                             <a href="#">
                                 <img src="./images/romantic_img5.jpg" alt="img-1">
                             </a>
                             <div class="desc">
                                 Price : 105
                                 <br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                                 <button>Buy</button>
                             </div>
                         </div>
 
-                        <div class="image-holder">
+                        <div class="product" data-name="p-22">
                             <a href="#">
                                 <img src="./images/romantic_img6.jpg" alt="img-1">
                             </a>
                             <div class="desc">
                                 Price : 199
                                 <br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                                 <button>Buy</button>
                             </div>
                         </div>
 
-                        <div class="image-holder">
+                        <div class="product" data-name="p-23">
                             <a href="#">
                                 <img src="./images/romantic_img7.jpg" alt="img-1">
                             </a>
                             <div class="desc">
                                 Price : 299
                                 <br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                           
                                 <button>Buy</button>
                             </div>
                         </div>
 
-                        <div class="image-holder">
+                        <div class="product" data-name="p-24">
                             <a href="#">
                                 <img src="./images/romantic_img8.jpg" alt="img-1">
                             </a>
                             <div class="desc">
                                 Price : 349
                                 <br>
+                                <div class="rating">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
                                 <button>Buy</button>
                             </div>
                         </div>
@@ -376,181 +494,293 @@
 
    <!-------------------- Comedy ---------------------->
                     <div>
-                        <h2>Comedy</h2>
-    
-                        <div class="gallery">
-                            <div class="image-holder">
+                        <h2 id="Comedy">Comedy</h2>
+   
+                        <div class="products-container">
+                            <div class="product" data-name="p-25">
                                 <a href="#">
                                     <img src="./images/comedy_img1.jpg" alt="img-1">
                                 </a>
                                 <div class="desc">
                                     Price : 400
                                     <br>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
                                     <button>Buy</button>
                                 </div>
                             </div>
-    
-                            <div class="image-holder">
+   
+                            <div class="product" data-name="p-26">
                                 <a href="#">
                                     <img src="./images/comedy_img2.jpg" alt="img-1">
                                 </a>
                                 <div class="desc">
                                     Price : 299
                                     <br>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
                                     <button>Buy</button>
                                 </div>
                             </div>
-    
-                            <div class="image-holder">
+   
+                            <div class="product" data-name="p-27">
                                 <a href="#">
                                     <img src="./images/comedy_img3.jpg" alt="img-1">
                                 </a>
                                 <div class="desc">
                                     Price : 349
                                     <br>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
                                     <button>Buy</button>
                                 </div>
                             </div>
-    
-                            <div class="image-holder">
+   
+                            <div class="product" data-name="p-28">
                                 <a href="#">
                                     <img src="./images/comedy_img4.jpg" alt="img-1">
                                 </a>
                                 <div class="desc">
                                     Price : 299
                                     <br>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
                                     <button>Buy</button>
                                 </div>
                             </div>
-    
-                            <div class="image-holder">
+   
+                            <div class="product" data-name="p-29">
                                 <a href="#">
                                     <img src="./images/comedy_img5.jpg" alt="img-1">
                                 </a>
                                 <div class="desc">
                                     Price : 199
                                     <br>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
                                     <button>Buy</button>
                                 </div>
                             </div>
-    
-                            <div class="image-holder">
+   
+                            <div class="product" data-name="p-30">
                                 <a href="#">
                                     <img src="./images/comedy_img6.jpg" alt="img-1">
                                 </a>
                                 <div class="desc">
                                     Price : 149
                                     <br>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
                                     <button>Buy</button>
                                 </div>
                             </div>
-    
-                            <div class="image-holder">
+   
+                            <div class="product" data-name="p-31">
                                 <a href="#">
                                     <img src="./images/comedy_img7.jpg" alt="img-1">
                                 </a>
                                 <div class="desc">
                                     Price : 349
                                     <br>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
                                     <button>Buy</button>
                                 </div>
                             </div>
-    
-                            <div class="image-holder">
+   
+                            <div class="product" data-name="p-32">
                                 <a href="#">
                                     <img src="./images/comedy_img8.jpg" alt="img-1">
                                 </a>
                                 <div class="desc">
                                     Price : 250
                                     <br>
+                                    <div class="rating">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
                                     <button>Buy</button>
                                 </div>
                             </div>
-    
-    
+   
+   
                         </div>
         </div>
     <!----------------Mystery---------->
         <div>
-            <h2>Mystery</h2>
-            <div class="gallery">
-                <div class="image-holder">
+            <h2 id="Mystery">Mystery</h2>
+            <div class="products-container">
+                <div class="product" data-name="p-33">
                     <a href="#">
                         <img src="./images/mystrey_img1.jpg" alt="img-1">
                     </a>
                     <div class="desc">
                         Price:200<br>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     <button>Buy</button>
                     </div>
                 </div>
-                <div class="image-holder">
+                <div class="product" data-name="p-34">
                     <a href="#">
                         <img src="./images/mystery_img2.jpg" alt="img-2">
                     </a>
                     <div class="desc">
                         Price:250
                         <br>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <button>Buy</button>
                     </div>
                 </div>
-                <div class="image-holder">
+                <div class="product" data-name="p-35">
                     <a href="#">
                         <img src="./images/mystery_img3.jpg" alt="img-3">
                     </a>
                     <div class="desc">
                         Price:180
                         <br>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <button>Buy</button>
                     </div>
                 </div>
-                <div class="image-holder">
+                <div class="product" data-name="p-36">
                     <a href="#">
                         <img src="./images/mystery_img4.jpg" alt="img-4">
                     </a>
                     <div class="desc">
                         Price:460
                         <br>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <button>Buy</button>
                     </div>
                 </div>
-                <div class="image-holder">
+                <div class="product" data-name="p-37">
                     <a href="#">
                         <img src="./images/mystery_img5.jpg" alt="img-5">
                     </a>
                     <div class="desc">
                         Price:390
                         <br>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <button>Buy</button>
                     </div>
                 </div>
-                <div class="image-holder">
+                <div class="product" data-name="p-38">
                     <a href="#">
                         <img src="./images/mystery_img6.jpg" alt="img-6">
                     </a>
                     <div class="desc">
                         Price:100
                         <br>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <button>Buy</button>
                     </div>
                 </div>
-                <div class="image-holder">
+                <div class="product" data-name="p-39">
                     <a href="#">
                         <img src="./images/mystery_img7.jpg" alt="img-7">
                     </a>
                     <div class="desc">
                         Price : 304
                         <br>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <button>Buy</button>
                     </div>
                 </div>
 
-                <div class="image-holder">
+                <div class="product" data-name="p-40">
                     <a href="#">
                         <img src="./images/mystery_img8.jpg" alt="img-1">
                     </a>
                     <div class="desc">
                         Price : 340
                         <br>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                         <button>Buy</button>
                     </div>
                 </div>
@@ -560,93 +790,148 @@
 <!----------- Fiction ------------------>
 
             <div>
-                <h2>Fiction</h2>
-
-                <div class="gallery">
-                    <div class="image-holder">
+                <h2 id="Fiction">Fiction</h2>
+                <div class="products-container">
+                    <div class="product" data-name="p-41">
                         <a href="#">
                             <img src="./images/fiction_img1.jpg" alt="img-1">
                         </a>
                         <div class="desc">
                             Price : 120
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-42">
                         <a href="#">
                             <img src="./images/fiction_img2.jpg" alt="img-2">
                         </a>
                         <div class="desc">
                             Price : 402
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-43">
                         <a href="#">
                             <img src="./images/fiction_img3.jpg" alt="img-3">
                         </a>
                         <div class="desc">
                             Price : 299
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-44">
                         <a href="#">
                             <img src="./images/fiction_img4.jpg" alt="img-4">
                         </a>
                         <div class="desc">
                             Price : 150
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-45">
                         <a href="#">
                             <img src="./images/fiction_img5.jpg" alt="img-5">
                         </a>
                         <div class="desc">
                             Price : 300
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-46">
                         <a href="#">
                             <img src="./images/fiction_img6.jpg" alt="img-6">
                         </a>
                         <div class="desc">
                             Price : 389
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-47">
                         <a href="#">
                             <img src="./images/fiction_img7.jpg" alt="img-7">
                         </a>
                         <div class="desc">
                             Price : 269
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
 
-                    <div class="image-holder">
+                    <div class="product" data-name="p-48">
                         <a href="#">
                             <img src="./images/fiction_img8.jpg" alt="img-8">
                         </a>
                         <div class="desc">
                             Price : 451
                             <br>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                             <button>Buy</button>
                         </div>
                     </div>
@@ -654,7 +939,1025 @@
     </div>
 
     <br>
-    <right> <a href="/index.html" class="btn">Back </a></right>
+<right> <a href="/index.html" class="btn">Back</a></right>
       </div>
-    </body>
+
+
+      <!--------- product-preview -------------->
+    <div class="products-preview" >
+     <div class="preview" data-target="p-1">
+        <i class="fas fa-times"></i>
+      <img src="images/adv_img1.jpg" alt="">
+      <h3>Treasure Hunt</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fa-regular fa-star"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+      <h4>Author Name: Peter Earle</h4>
+      <div class="price">
+        <i class="fas fa-inr" aria-hidden="true"></i>299</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+     </div>
+
+    <div class="preview" data-target="p-2">
+        <i class="fas fa-times"></i>
+        <img src="images/adv_img2.jpg" alt="">
+        <h3>DOWNFALL</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+     <!-- <span>( 250 )</span> -->
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+        <h4>Author Name:Nerys Wheatley</h4>
+        <div class="price">
+            <i class="fas fa-inr" aria-hidden="true"></i>250</div>
+        <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+        </div>
+    </div>
+
+<div class="preview" data-target="p-3">
+    <i class="fas fa-times"></i>
+  <img src="images/adv_img3.jpg" alt="">
+  <h3>ATLANTIS FOUND</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Clive Cussler</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>180</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+
+<div class="preview" data-target="p-4">
+    <i class="fas fa-times"></i>
+  <img src="images/adv_img4.jpg" alt="">
+  <h3>VOODOO CHILD</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: William Burke</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>460</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+
+<div class="preview" data-target="p-5">
+    <i class="fas fa-times"></i>
+  <img src="images/adv_img5.jpg" alt="">
+  <h3>THE MAPMAKER</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: A.L. Tait</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>390</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-6">
+    <i class="fas fa-times"></i>
+  <img src="images/adv_img6.jpg" alt="">
+  <h3>THE BLACK THUNDER</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Riley Peyton</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>100</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-7">
+    <i class="fas fa-times"></i>
+  <img src="images/adv_img7.jpg" alt="">
+  <h3>THE CALL OF WILD</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Jack London</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>304</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-8">
+    <i class="fas fa-times"></i>
+  <img src="images/adv_img8.jpg" alt="">
+  <h3>TOUCHING THE VOID</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Joe Simpson</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>340</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-9">
+    <i class="fas fa-times"></i>
+  <img src="images/thriller_img1.jpg" alt="">
+  <h3>THE SURVIVORS</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Jane Harper</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>120</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-10">
+    <i class="fas fa-times"></i>
+  <img src="images/thriller_img2.jpg" alt="">
+  <h3>THE MISSING</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Caroline Eriksson</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>402</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-11">
+    <i class="fas fa-times"></i>
+  <img src="images/thriller_img3.jpg" alt="">
+  <h3>THOSE EYES</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Darius Cook</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>299</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-12">
+    <i class="fas fa-times"></i>
+  <img src="images/thriller_img4.jpg" alt="">
+  <h3>THE SKITTERING</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Tony R Tucker</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>150</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-13">
+    <i class="fas fa-times"></i>
+  <img src="images/thriller_img5.jpg" alt="">
+  <h3>BLINK</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: K.L. Slatter</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>300</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-14">
+    <i class="fas fa-times"></i>
+  <img src="images/thriller_img6.jpg" alt="">
+  <h3>WHO DO YOU BELIEVE</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Erin Kelly</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>389</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-15">
+    <i class="fas fa-times"></i>
+  <img src="images/thriller_img7.jpg" alt="">
+  <h3>DEATH SENTENCE</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Bill Carson</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>269</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-16">
+    <i class="fas fa-times"></i>
+  <img src="images/thriller_img8.jpg" alt="">
+  <h3>THE THRONE OF DAVID</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Ann Farnsworth</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>451</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-17">
+    <i class="fas fa-times"></i>
+  <img src="images/romantic_img1.jpg" alt="">
+  <h3>HONEYBUN & COFFEE</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Sam Cheever</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>250</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-18">
+    <i class="fas fa-times"></i>
+  <img src="images/romantic_img2.jpg" alt="">
+  <h3>MODERN LOVE</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Beau North</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>300</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-19">
+    <i class="fas fa-times"></i>
+  <img src="images/romantic_img3.jpg" alt="">
+  <h3>DAMAGED BRIDE</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Blake York</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>450</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-20">
+    <i class="fas fa-times"></i>
+  <img src="images/romantic_img4.jpg" alt="">
+  <h3>JUST ONE TEASE</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Carly Phillips</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>299</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-21">
+    <i class="fas fa-times"></i>
+  <img src="images/romantic_img5.jpg" alt="">
+  <h3>LIFE AFTER YOU</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Temys Premade</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>105</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-22">
+    <i class="fas fa-times"></i>
+  <img src="images/romantic_img6.jpg" alt="">
+  <h3>STAY</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Emily Evans</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>199</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-23">
+    <i class="fas fa-times"></i>
+  <img src="images/romantic_img7.jpg" alt="">
+  <h3>SEARCHING FOR FINLEY</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Susan Stoker</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>299</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-24">
+    <i class="fas fa-times"></i>
+  <img src="images/romantic_img8.jpg" alt="">
+  <h3>WILDERNESS TRAIL</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Dorothy Wiley</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>349</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-25">
+    <i class="fas fa-times"></i>
+  <img src="images/comedy_img1.jpg" alt="">
+  <h3>THE KIDS IN THE HALL</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Paul Myers</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>400</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-26">
+    <i class="fas fa-times"></i>
+  <img src="images/comedy_img2.jpg" alt="">
+  <h3>RED WHITE & ROYAL BLUE</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Casey MCQuistion</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>299</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-27">
+    <i class="fas fa-times"></i>
+  <img src="images/comedy_img3.jpg" alt="">
+  <h3>STAY HUNGRY</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Sebastian Maniscalco</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>349</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-28">
+    <i class="fas fa-times"></i>
+  <img src="images/comedy_img4.jpg" alt="">
+  <h3>LAST YEAR'S MISTAKE</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Gina Ciocca</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>299</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-29">
+    <i class="fas fa-times"></i>
+  <img src="images/comedy_img5.jpg" alt="">
+  <h3>THE KIDS IN THE HALL</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Joe Berkanitz</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>199</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-30">
+    <i class="fas fa-times"></i>
+  <img src="images/comedy_img6.jpg" alt="">
+  <h3>BILLY'S FARTING ADVENTURE</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Samantha Foster</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>149</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-31">
+    <i class="fas fa-times"></i>
+  <img src="images/comedy_img7.jpg" alt="">
+  <h3>TWENTY THIRTY</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Albert Brooks</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>349</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-32">
+    <i class="fas fa-times"></i>
+  <img src="images/comedy_img8.jpg" alt="">
+  <h3>ECCENTRICS OF COMEDY</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Anthony Slide</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>250</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-33">
+    <i class="fas fa-times"></i>
+  <img src="images/mystrey_img1.jpg" alt="">
+  <h3>KISS OF DEATH</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Robert Skuce</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>200</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-34">
+    <i class="fas fa-times"></i>
+  <img src="images/mystery_img2.jpg" alt="">
+  <h3>NIGHT WATCHMAN</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Tony Dunbar</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>250</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-35">
+    <i class="fas fa-times"></i>
+  <img src="images/mystery_img3.jpg" alt="">
+  <h3>THE GHOST FINDER</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Kara Lane</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>180</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-36">
+    <i class="fas fa-times"></i>
+  <img src="images/mystery_img4.jpg" alt="">
+  <h3>DIVINE DECISIONS</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Hope Callaghan</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>460</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-37">
+    <i class="fas fa-times"></i>
+  <img src="images/mystery_img5.jpg" alt="">
+  <h3>BURIED SECRETS</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: T.J. Brearton</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>390</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-38">
+    <i class="fas fa-times"></i>
+  <img src="images/mystery_img6.jpg" alt="">
+  <h3>GONE GIRL</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Gillian Flynn</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>100</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-39">
+    <i class="fas fa-times"></i>
+  <img src="images/mystery_img7.jpg" alt="">
+  <h3>THE MEMORIES OF SHERLOCK HOLMES</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Steve Thempson</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>304</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-40">
+    <i class="fas fa-times"></i>
+  <img src="images/mystery_img8.jpg" alt="">
+  <h3>HOMICIDE</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: David Simon</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>340</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-41">
+    <i class="fas fa-times"></i>
+  <img src="images/fiction_img1.jpg" alt="">
+  <h3>RIVER OF STARS</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Gavriel Kay</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>120</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-42">
+    <i class="fas fa-times"></i>
+  <img src="images/fiction_img2.jpg" alt="">
+  <h3>LEAVE NO TRACE</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Mindy Mejia</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>402</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-43">
+    <i class="fas fa-times"></i>
+  <img src="images/fiction_img3.jpg" alt="">
+  <h3>THE LIVES WE LOST</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Megan Crewe</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>299</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-44">
+    <i class="fas fa-times"></i>
+  <img src="images/fiction_img4.jpg" alt="">
+  <h3>TOWER LORD</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Anthony Ryan</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>150</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-45">
+    <i class="fas fa-times"></i>
+  <img src="images/fiction_img5.jpg" alt="">
+  <h3>A GAME OF THRONES</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: George R.R. Martin</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>300</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-46">
+    <i class="fas fa-times"></i>
+  <img src="images/fiction_img6.jpg" alt="">
+  <h3>FORTUNATE</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Becky Chambers</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>389</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-47">
+    <i class="fas fa-times"></i>
+  <img src="images/fiction_img7.jpg" alt="">
+  <h3>THE PAST IS RISING</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Katherine Bywaters</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>269</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+<div class="preview" data-target="p-48">
+    <i class="fas fa-times"></i>
+  <img src="images/fiction_img8.jpg" alt="">
+  <h3>RED STAR</h3>
+  <div class="stars">
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star"></i>
+     <i class="fas fa-star-half-alt"></i>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+  <h4>Author Name: Simon Kewin</h4>
+  <div class="price">
+    <i class="fas fa-inr" aria-hidden="true"></i>451</div>
+  <div class="buttons">
+     <a href="#" class="buy">buy now</a>
+     <a href="#" class="cart">add to cart</a>
+  </div>
+</div>
+</div>
+
+<br><br>
+<footer>
+    <div class="footer_container">
+        <div class="footer_column">
+            <h3>DESTINY BOOKSTORE</h3>
+
+            <a href="#">Adventure</a>
+            <a href="#">Thriller</a>
+            <a href="#">Romantic</a>
+            <a href="#">Comedy</a>
+            <a href="#">Mystery</a>
+            <a href="#">Fiction</a>
+            
+        </div>
+
+        <div class="footer_column">
+            <h3>DESTINY BOOKSTORE</h3>
+
+            <a href="#">Adventure</a>
+            <a href="#">Thriller</a>
+            <a href="#">Romantic</a>
+            <a href="#">Comedy</a>
+            <a href="#">Mystery</a>
+            <a href="#">Fiction</a>
+            
+        </div>
+
+        <div class="footer_column">
+            <h3>DESTINY BOOKSTORE</h3>
+
+            <a href="#">Adventure</a>
+            <a href="#">Thriller</a>
+            <a href="#">Romantic</a>
+            <a href="#">Comedy</a>
+            <a href="#">Mystery</a>
+            <a href="#">Fiction</a>
+            
+        </div>
+    </div>
+
+    <div class="copyright">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        © 2023 www.destinybookstore.com. All rights reserved.
+    </div>
+</footer>
+</body>
 </html>
